@@ -37,18 +37,6 @@ variable "value" {
   type        = string
 }
 
-variable "tier" {
-  description = "Parameter tier to assign. Valid tiers are Standard (default), Advanced, and Intelligent-Tiering. Downgrading an advanced tier to Standard will recreate the resource."
-  type        = string
-  default     = "Standard"
-}
-
-variable "key_id" {
-  description = "KMS Key ID or ARN for encrypting a SecureString"
-  type        = string
-  default     = null
-}
-
 variable "tags" {
   type        = map(string)
   default     = {}

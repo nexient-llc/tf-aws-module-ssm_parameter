@@ -35,7 +35,11 @@ No resources.
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5.0, <= 1.5.5 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 3.57.0 |
+| <a name="requirement_random"></a> [random](#requirement\_random) | >= 3.6.0 |
 
 ## Providers
 
@@ -59,7 +63,6 @@ No resources.
 | <a name="input_type"></a> [type](#input\_type) | Type of the parameter. Valid types are String, StringList, and SecureString. | `string` | `"String"` | no |
 | <a name="input_description"></a> [description](#input\_description) | Description of the parameter | `string` | `null` | no |
 | <a name="input_value"></a> [value](#input\_value) | Value of the parameter. | `string` | n/a | yes |
-| <a name="input_tier"></a> [tier](#input\_tier) | Parameter tier to assign. Valid tiers are Standard (default), Advanced, and Intelligent-Tiering. Downgrading an advanced tier to Standard will recreate the resource. | `string` | `"Standard"` | no |
 
 ## Outputs
 

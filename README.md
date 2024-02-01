@@ -115,7 +115,7 @@ If `make check` target is successful, developer is good to commit the code to pr
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.22.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.34.0 |
 
 ## Modules
 
@@ -135,8 +135,6 @@ No modules.
 | <a name="input_type"></a> [type](#input\_type) | Type of the parameter. Valid types are String, StringList, and SecureString. | `string` | `"String"` | no |
 | <a name="input_description"></a> [description](#input\_description) | Description of the parameter | `string` | `null` | no |
 | <a name="input_value"></a> [value](#input\_value) | Value of the parameter. | `string` | n/a | yes |
-| <a name="input_tier"></a> [tier](#input\_tier) | Parameter tier to assign. Valid tiers are Standard (default), Advanced, and Intelligent-Tiering. Downgrading an advanced tier to Standard will recreate the resource. | `string` | `"Standard"` | no |
-| <a name="input_key_id"></a> [key\_id](#input\_key\_id) | KMS Key ID or ARN for encrypting a SecureString | `string` | `null` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | A map of tags to add to the resources created by the module. | `map(string)` | `{}` | no |
 
 ## Outputs

@@ -36,9 +36,3 @@ variable "value" {
   description = "Value of the parameter."
   type        = string
 }
-
-variable "tier" {
-  description = "Parameter tier to assign. Valid tiers are Standard (default), Advanced, and Intelligent-Tiering. Downgrading an advanced tier to Standard will recreate the resource."
-  type        = string
-  default     = "Standard"
-}
